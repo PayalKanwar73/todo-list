@@ -1,0 +1,134 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main card */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #312e81;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Input and button */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6366f1;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+/* Task items */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f5f5ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+}
+
+/* Completed tasks */
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #ef4444;
+    padding: 7px 10px;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+/* Task counter */
+#taskCount {
+    margin-top: 18px;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+} .priority-high {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.priority-medium {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.priority-low {
+    color: #16a34a;
+    font-weight: bold;
+}

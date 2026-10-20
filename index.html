@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My To-Do List 📝</h1>
+        <p class="subtitle">Organize your day, one task at a time.</p>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+            > <select id="taskPriority">
+    <option value="Low">Low Priority</option>
+    <option value="Medium" selected>Medium Priority</option>
+    <option value="High">High Priority</option>
+</select>
+            <button id="addBtn">Add</button>
+        </div>
+
+        <input
+    type="text"
+    id="searchInput"
+    placeholder="Search tasks..."
+>
+
+<ul id="taskList"></ul> <div class="sort-area">
+    <label for="sortPriority">Sort by Priority:</label>
+    <select id="sortPriority">
+        <option value="default">Default Order</option>
+        <option value="High">High Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="Low">Low Priority</option>
+    </select>
+</div> 
+
+        <p id="taskCount">0 tasks remaining</p> <div id="taskStats">
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+    <p>Completed: <span id="completedTasks">0</span></p>
+    <p>Pending: <span id="pendingTasks">0</span></p>
+</div>
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
